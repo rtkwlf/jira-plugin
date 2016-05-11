@@ -10,8 +10,8 @@
   <artifactId>jira</artifactId>
   <version>2.3-SNAPSHOT</version>
   <packaging>hpi</packaging>
-  <name>Jenkins JIRA plugin</name>
-  <description>Integrates Jenkins to JIRA</description>
+  <name>Jenkins JIRA (AWN VERSION) plugin</name>
+  <description>Integrates Jenkins to JIRA (AWN Version)</description>
   <url>http://wiki.jenkins-ci.org/display/JENKINS/JIRA+Plugin</url>
   
   <properties>
@@ -33,8 +33,8 @@
   </properties>
   
   <scm>
-    <connection>scm:git:git://github.com/jenkinsci/jira-plugin.git</connection>
-    <developerConnection>scm:git:git@github.com:jenkinsci/jira-plugin.git</developerConnection>
+    <connection>scm:git:git://github.com/rtkwlf/jira-plugin.git</connection>
+    <developerConnection>scm:git:git@github.com:rtkwlf/jira-plugin.git</developerConnection>
     <url>https://github.com/jenkinsci/jira-plugin</url>
     <tag>HEAD</tag>
   </scm>  

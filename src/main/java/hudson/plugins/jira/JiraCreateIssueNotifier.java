@@ -338,11 +338,13 @@ public class JiraCreateIssueNotifier extends Notifier {
                         listener.getLogger().println("The previous build also failed but the issue is closed");
                         deleteFile(filename);
                         Issue issue = createJiraIssue(build, filename);
+                        listener.getLogger().println("Build failed, created JIRA issue " + issue.getKey());
                         LOG.info(String.format("[%s] created.", issue.getKey()));
 
                     }else {
-                        addComment(build, issueId, comment);
-                        LOG.info(String.format("[%s] The previous build also failed, comment added.", issueId));
+                        Issue issue = createJiraIssue(build, filename);
+                        listener.getLogger().println("Build failed, created JIRA issue " + issue.getKey());
+                        LOG.info(String.format("[%s] created.", issue.getKey()));
                     }
                 } catch (IOException e) {
                     LOG.warning(String.format("[%s] - error processing JIRA change: %s", issueId, e.getMessage()));
